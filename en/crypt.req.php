@@ -2,10 +2,10 @@
 
 function GetPassPhrase() {
     // 16 characters
-    return "1234567890123FF6";
+    return "0ABC7265444CA841";
 }
 
 function GetIv() {
     // 16 characters
-    return "1234567890123456";
+    return "FFD5644329685AB5";
 }
