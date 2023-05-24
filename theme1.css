@@ -1,0 +1,131 @@
+/* @font-face {
+    font-family: DataSun;
+    src: url('resource/DataSunFixed.otf');
+} */
+
+* {
+    box-sizing: border-box;
+    /* font-family: DataSun; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: .66em;
+    font-size: 15px;
+    background: url('resource/cloud-computing.jpg') no-repeat;
+    background-size: cover;
+
+}
+
+.cld__upload {
+    margin-top: 8em;
+    display: inline-block;
+    padding: .66em;
+    vertical-align: top;
+    min-height: 12em;
+    width: 50%;
+}
+
+.cld__upl_title {
+    background-color: rgba(150, 150, 150, 0.6);
+    padding: .66em;
+    margin: 0;
+}
+
+.cld__upl_input_container {
+    background-color: rgba(150, 150, 150, 0.6);
+    padding: .66em;
+}
+
+.cld__upl_input::file-selector-button {
+    display: none;
+}
+
+.cld__upl_cmd_container {
+    background-color: rgba(150, 150, 150, 0.6);
+    padding: .66em;
+}
+
+.cld__upl_cmd,
+.cld__dwl_cmd {
+    background: #a8a8a8;
+    border: 0;
+    display: block;
+    padding: .5em;
+    margin: 0;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 16em;
+}
+
+.cld__upl_input,
+.cld__dwl_input {
+    background-color: white;
+    border: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: .66em;
+    width: 100%;
+}
+
+.cld__upl_input:focus,
+.cld__dwl_input:focus {
+    background-color: #f6f6f6;
+    border:0;
+} 
+
+
+.cld__upl_input:hover,
+.cld__dwl_input:hover {
+    background-color: #dadada;
+    border:0;
+} 
+
+.cld__upl_cmd:hover,
+.cld__dwl_cmd:hover {
+    background: #c2c2c2;
+}
+
+.cld__upl_cmd:active,
+.cld__dwl_cmd:active {
+    background: #989898;
+}
+
+
+.cld__download {
+    display: inline-block;
+    padding: .66em;
+    vertical-align: top;
+    margin-top: 8em;
+    min-height: 12em;
+    width: 50%;
+}
+
+.cld__dwl_title {
+    background-color: rgba(150, 150, 150, 0.6);
+    padding: .66em;
+    margin: 0;
+}
+
+.cld__dwl_input_container {
+    background-color: rgba(150, 150, 150, 0.6);
+    padding: .66em;
+}
+
+.cld__dwl_cmd_container {
+    background-color: rgba(150, 150, 150, 0.6);
+    padding: .66em;
+}
+
+
+
+@media screen and (max-width: 720px) {
+
+    .cld__download,
+    .cld__upload {
+        margin-top: 1em;
+        width: 100%;
+    }
+}
