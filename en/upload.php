@@ -7,7 +7,7 @@ if (
 ) {
     $name = basename($_FILES['fileToUpload']['name']);
     $guid = uniqid() . '-' . uniqid();
-    $upload_dir = "/var/www/html/cloud3/uploads/";
+    $upload_dir = "uploads/";
     // télécharger le fichier en tant que .tmp
     $tmpFile = $upload_dir . $guid . ".tmp";
     move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $tmpFile);
