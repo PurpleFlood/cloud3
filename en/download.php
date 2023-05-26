@@ -10,7 +10,7 @@ function readCSV($csvFile) {
     return $line_of_text;
 }
 
-$uploadDir = 'c:\\temp\\uploads\\';
+$uploadDir = '/var/www/html/cloud3/uploads/';
 $csvFile = $uploadDir.'data.db';
 $lines = readCSV($csvFile);
 

@@ -7,7 +7,7 @@ if (
 ) {
     $name = basename($_FILES['fileToUpload']['name']);
     $guid = uniqid() . '-' . uniqid();
-    $upload_dir = "c:\\temp\\uploads\\";
+    $upload_dir = "/var/www/html/cloud3/uploads/";
     // télécharger le fichier en tant que .tmp
     $tmpFile = $upload_dir . $guid . ".tmp";
     move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $tmpFile);
@@ -29,6 +29,5 @@ if (
     file_put_contents($upload_dir . 'data.db', "$guid,$name\r\n", FILE_APPEND);
     echo "<p>You can download your file with the code : $guid </p>";
     echo "<p>or use this think :</p>";
-    echo "<p>https://localhost/benjamin.egon/be-bookstore2/cloud2/download.php?guid=$guid</p>";
+    echo "<p>http://debian-web/cloud3/download.php?guid=$guid</p>";
     echo "<p><a href=\"index.php\">Back to home</a></p>";
-}

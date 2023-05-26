@@ -1,4 +1,4 @@
-<?php // writed by Benjamin EG0N
+<?php // writed by MOI WESH
 $GLOBALS['localisation'] = [
   'fr' => [
     'download' => 'Télécharger'
